@@ -17,8 +17,8 @@ All settings are in `src/main/resources/application.yml`. Each one can be overri
 | `SERVER_PORT` | `8080` | HTTP port |
 | `DB_URL` | `jdbc:postgresql://localhost:5432/expenses` | JDBC URL of the database |
 | `DB_USER` | `expense` | Database user |
-| `DB_PASSWORD` | *(none)* | Database password. **Secret** |
-| `API_KEY` | *(none, required)* | Value clients must send in `X-API-Key`. The app will not start without it. **Secret** |
+| `DB_PASSWORD_EXPENSE` | *(none)* | Database password. **Secret** |
+| `EXPENSE_API_KEY` | *(none, required)* | Value clients must send in `X-API-Key`. The app will not start without it. **Secret** |
 | `RATES_BASE_URL` | `https://api.frankfurter.dev/v1` | Base URL of the exchange-rate API |
 | `RATES_CONNECT_TIMEOUT` | `3s` | Connect timeout for the rate API |
 | `RATES_READ_TIMEOUT` | `5s` | Read timeout for the rate API |
