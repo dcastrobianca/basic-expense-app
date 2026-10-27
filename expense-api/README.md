@@ -15,8 +15,8 @@ All settings are in `src/main/resources/application.yml`. Each one can be overri
 | Variable | Default | Purpose |
 |---|---|---|
 | `SERVER_PORT` | `8080` | HTTP port |
-| `DB_URL` | `jdbc:postgresql://localhost:5432/expenses` | JDBC URL of the database |
-| `DB_USER` | `expense` | Database user |
+| `DB_URL` | `jdbc:postgresql://localhost:5432/expense_app_db` | JDBC URL of the database |
+| `DB_USER` | `expense_app` | Database user |
 | `DB_PASSWORD_EXPENSE` | *(none)* | Database password. **Secret** |
 | `EXPENSE_API_KEY` | *(none, required)* | Value clients must send in `X-API-Key`. The app will not start without it. **Secret** |
 | `RATES_BASE_URL` | `https://api.frankfurter.dev/v1` | Base URL of the exchange-rate API |
@@ -38,8 +38,8 @@ This produces `target/expense-api.jar`.
 ## Run
 
 ```sh
-export DB_PASSWORD='...'
-export API_KEY='...'
+export DB_PASSWORD_EXPENSE='...'
+export EXPENSE_API_KEY='...'
 java -jar target/expense-api.jar
 ```
 

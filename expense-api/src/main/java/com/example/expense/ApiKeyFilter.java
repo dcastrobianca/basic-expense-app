@@ -22,7 +22,7 @@ public class ApiKeyFilter extends OncePerRequestFilter {
 
     public ApiKeyFilter(AppProperties props) {
         if (props.apiKey() == null || props.apiKey().isBlank()) {
-            throw new IllegalStateException("API_KEY must be set");
+            throw new IllegalStateException("app.api-key must be set");
         }
         this.apiKey = props.apiKey().getBytes(StandardCharsets.UTF_8);
     }
